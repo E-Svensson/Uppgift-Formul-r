@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Formulär</title>
+</head>
+<body>
+    <form method="post" action="tack.html">
+        <fieldset>
+            <legend>Formulär</legend>
+            <p>
+                <label for="Namn">Ditt namn:</label>
+                <input type="text" placeholder="Förnamn Efternamn" name="Namn" id="Namn" required>
+                <label for="Namn">*</label>
+            </p>
+            <p>
+                <label for="Land">Din nationalitet:</label>
+                <input type="text" placeholder="Land" name="Land" id="Namn" required>
+                <label for="Namn">*</label>
+            </p>
+            <p>
+                <strong>Är pluto en planet?</strong>
+            </p>
+            <p>
+                <input type="radio" name="Pluto" id="Ja">
+                <label for="Ja">Ja</label>
+                <input type="radio" name="Pluto" id="Nej">
+                <label for="Nej">Nej</label>
+            </p>
+            <p>
+                <strong>Om du väljer ett av dessa svar slumpmässigt, vad är chansen att du har rätt?</strong>
+            </p>
+            <p>
+                <input type="radio" name="Random" id="0">
+                <label for="0">0%</label>
+                <input type="radio" name="Random" id="25a">
+                <label for="25a">25%</label>
+                <input type="radio" name="Random" id="25b">
+                <label for="25b">25%</label>
+                <input type="radio" name="Random" id="50">
+                <label for="50">50%</label>
+            </p>
+            <p>
+                <strong>Välj en</strong>
+            </p>
+            <p class ="Val">
+                <input type="checkbox" name="Val" id="A">
+                <label for="A">1</label>
+            </p>
+            <p class ="Val">
+                <input type="checkbox" name="Val" id="B">
+                <label for="B">2</label>
+            </p>
+            <p class ="Val">
+                <input type="checkbox" name="Val" id="C">
+                <label for="C">3</label>
+            </p>
+            <p class ="Val">
+                <input type="checkbox" name="Val" id="D">
+                <label for="D">4</label>
+            </p>
+            <p>
+                <strong>Vad tyckte du om detta formuläret?</strong>
+            </p>
+            <p>
+                <label for="Betyga">Mycket dålig</label>
+                <input type="range" name="Betyg" id="Betyg" step>
+                <label for="Betyga">Mycket bra</label>
+            </p>
+            <p>
+                <input type="submit" value="Skicka">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
